@@ -22,8 +22,8 @@
 
 <body>
     <div class="overflow-hidden">
-        <nav class="navbar navbar-expand-lg nav-bg-color ps-3 pe-3 pt-5">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg nav-bg-color ps-3 pe-3 pt-5 pb-3">
+            <div class="container-fluid pb-5">
                 <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                     <img src="./assets/images/png/Aleph-logo.png" alt="logo" class="w-75">
                 </a>
@@ -62,9 +62,9 @@
 
 
 
-        <header class="nav-bg-color pb-5">
-            <div class="my-container pt-5 mt-m1 bg-1">
-                <div class="row pt-5 flex-column-reverse flex-lg-row">
+        <header class="nav-bg-color pb-5 bg-1">
+            <div class="my-container pt-5 mt-m1 pb-5">
+                <div class="row pt-5 flex-column-reverse flex-lg-row pb-5">
                     <div class="col-lg-6 col-12 max-properties" data-aos="fade-up-right" data-aos-duration="2000">
                         <h1 class="mainHeading-1 pt-5 ">
                             Zero-knowledge, <br> <span class="mainHeadingLight"> scalable layer 1</span>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-lg-6 col-12 d-flex justify-content-center justify-content-lg-start"
                         data-aos="zoom-in-up" data-aos-duration="2000">
-                        <div>
+                        <div class="position-relative a-pos d-flex justify-content-center align-items-center">
                             <img src="/assets/images/png/A-logo.png" alt="A-img">
                         </div>
                     </div>
@@ -94,7 +94,7 @@
             </div>
 
         </header>
-        <section id="build" class="bg-img-2 mt-m1">
+        <section id="build" class="bg-img-2 mt-m1 ">
             <div class="my-container">
                 <div class="d-flex justify-content-center align-items-center">
                     <h2 class="sub-heading pt-4 letter-space text-center pb-5">FEATURED IN</h2>
@@ -508,7 +508,12 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-baseline gap-3 mt-4">
-                            <input type="checkbox" id="box_check">
+                            <div class="checkBox" id="box_check">
+                                <label class="main">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="geekmark"></span>
+                                </label>
+                            </div>
                             <label for="box_check" class="check-box-txt max-340">
                                 I consent to receive commercial information in the
                                 form of a newsletter sent to the e-mail address

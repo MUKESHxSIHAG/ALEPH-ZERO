@@ -32,10 +32,15 @@
 }
 
 .bg-1 {
-    background-image: url(/assets/images/png/bg-1.png);
+    background-image: url(/assets/images/png/HeroSvg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
+}
+
+.a-pos {
+    transform: translateX(109px);
+    bottom: 40px;
 }
 
 .max-width-392 {
@@ -304,7 +309,8 @@ input {
     bottom: 2px;
 
 }
-.social-media:hover{
+
+.social-media:hover {
     transform: translateY(5px)
 }
 
@@ -378,8 +384,9 @@ input {
 .card-2:hover img {
     transform: scale(1.1);
 }
-.card-1:hover{
-box-shadow: 0px 4px 22px #00EAC7;
+
+.card-1:hover {
+    box-shadow: 0px 4px 22px #00EAC7;
 }
 
 .card-last:hover {
@@ -388,6 +395,54 @@ box-shadow: 0px 4px 22px #00EAC7;
 
 .crsr-ptr {
     cursor: pointer;
+}
+
+.main {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.geekmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+}
+
+.main input:checked~.geekmark {
+    background-color: var(--secondary-color);
+}
+
+
+.geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.main input:checked~.geekmark:after {
+    display: block;
+}
+
+.main .geekmark:after {
+    left: 6px;
+    bottom: 4.5px;
+    width: 5px;
+    height: 10px;
+    border: 1px solid var(--white-color);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 
@@ -437,6 +492,7 @@ box-shadow: 0px 4px 22px #00EAC7;
     .bg-1 {
         background-image: none;
     }
+
 
     .max-properties {
         display: flex;
