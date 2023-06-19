@@ -345,6 +345,9 @@ input {
 .card-2:hover img {
     transform: scale(1.1);
 }
+.card-last:hover{
+    box-shadow: O 4px 8px 12px #00EAC7;
+}
 
 
 
